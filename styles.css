@@ -1,0 +1,56 @@
+/*Contenedor general para mostrar las cajas*/
+.contenedor{
+    display:flex;
+    gap:40px;
+    margin-top: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* ____________________________________ */
+/* 1. ANIMACIONES SIMPLES CON KEYFRAMES */
+/* ____________________________________ */
+
+.caja-1{
+    width:100px;
+    height:100px;
+    background-color:#a8e6cf;
+    animation:mover 4s infinite;
+}
+
+/*keyframes movimiento horizontal */
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }   
+    100% {
+        transform: translateX(200px);
+    }   
+}
+
+/* __________________________________ */
+/* 1. ANIMACIONES CON MULTIPLES PASOS */
+/* __________________________________ */
+.caja-2{
+    width:100px;
+    height:100px;
+    background-color:#ffd3b6;
+    animation:cambiar-color 6s infinite;
+}
+@keyframes cambiar-color {
+    0% {
+        background-color:#ffd3b6;
+    }
+    25% {
+        background-color:#a8e6cf;
+    } 
+    50% {
+        background-color:#379683;
+    }   
+    75% {
+        background-color:#ff8b94;
+    }
+    100% {
+        background-color:#ffd3b6;
+    }    
+}
