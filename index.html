@@ -1,22 +1,81 @@
-<!DOCTYPE html>
-<html lang="ES">
-    <head>
-        <meta charset="UTF-8">
-        <title>Solución - Actividad 3: Animaciones CSS3 </title>
-        <Link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Solución Actividad 3 - Animaciones CSS3 </h1>
-        <p>
-            Ejemplos completos usados <strong>keyframes</strong>
-            <strong>transiciones</strong> y <strong>funciones de tiempo</strong>
-        </p>
-        <div class="contenedor" >
-            <div class="caja-1"></div>
-            <div class="caja-2"></div>
-            <div class="caja-3"></div>
-            <div class="caja-4"></div>
-        </div>
-    </body>
-</html>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pag Web</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- Header + Nav -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="site-title">Galeria de Arte</h1>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <main id="inicio" class="container">
+      <section id="galeria" class="section">
+        <h2 class="section-title">Galería Responsive</h2>
+        <div class="grid-gallery">
+          <figure class="card"><img src="ilustración1.jpg" alt="Ilustración 1" /></figure>
+          <figure class="card"><img src="ilustración2.jpg" alt="Ilustración 2" /></figure>
+          <figure class="card"><img src="ilustración3.jpg" alt="Ilustración 3" /></figure>
+          <figure class="card"><img src="ilustración4.jpg" alt="Ilustración 4" /></figure>
+          <figure class="card"><img src="ilustración5.jpg" alt="Ilustración 5" /></figure>
+          <figure class="card"><img src="ilustración6.jpg" alt="Ilustración 6" /></figure>
+        </div>
+      </section>
+
+      <!-- Servicios (Flexbox) -->
+      <section id="servicios" class="section">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="servicios-list">
+          <article class="servicio-item">
+            <h3>Diseño Web</h3>
+            <p>Creación de interfaces modernas y eficientes.</p>
+          </article>
+          <article class="servicio-item">
+            <h3>Desarrollo Frontend</h3>
+            <p>Construcción de sitios web rápidos y responsivos.</p>
+          </article>
+          <article class="servicio-item">
+            <h3>Consultoría</h3>
+            <p>Asesoría en desarrollo, UX y accesibilidad.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sección destacada (posicionamiento) -->
+      <section class="section destacado" aria-labelledby="titulo-destacado">
+        <h2 id="titulo-destacado" class="section-title">Información Destacada</h2>
+        <div class="destacado-box">
+          <span class="badge" aria-hidden="true">Nuevo</span>
+          <p>
+            Esta sección utiliza técnicas de <strong>posicionamiento</strong> (sticky, relative, absolute) para
+            destacar contenido y mejorar la jerarquía visual.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>&copy; <span id="yy"></span> BRAYAN ALEXIS ENRIQUEZ GIRALDO</small>
+      </div>
+    </footer>
+
+    <script>
+      // Año automático en el footer
+      document.getElementById('yy').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
